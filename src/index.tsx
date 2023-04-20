@@ -1,11 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
-import { App } from './App';
+import { createRoot } from 'react-dom/client';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-);
+import 'bulma/css/bulma.css';
+import '@fortawesome/fontawesome-free/css/all.css';
+import './styles/index.scss';
+
+import { AppProvider } from './AppContext';
+import { AuthApp } from './AuthApp';
+
+createRoot(document.getElementById('root') as HTMLDivElement)
+  .render(
+    <AppProvider>
+      <AuthApp />
+    </AppProvider>,
+  );

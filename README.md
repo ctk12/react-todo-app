@@ -1,4 +1,6 @@
-# React Todo App with TypeScript
+# React Todo App with TypeScript using API
+
+`Mate API URL` - https://mate.academy/students-api
 
 ### App Features
 

@@ -18,4 +18,4 @@
 
 `Filter Todos By All, Active, Completed` - filter todos from user todos list
 
-`LOGOUT Todo App` - available to deploy your application to gh-pages
+`LOGOUT Todo App` - logout from user dashboard. and redirect to login page

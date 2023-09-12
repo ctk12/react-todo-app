@@ -136,6 +136,7 @@ export const LoginForm: React.FC = () => {
 
   return (
     <>
+      {/* login form */}
       <form
         className="box is-size-3 mt-5"
         onSubmit={addUser}

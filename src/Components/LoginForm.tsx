@@ -53,7 +53,7 @@ export const LoginForm: React.FC = () => {
   const toshowPrevUsers = useMemo(() => (prevUsersFromLocalStorage !== 0
     ? prevUsersFromLocalStorage
       .filter(preMail => !email.length || preMail.includes(email))
-    : 0),
+    : []),
   [email]);
 
   const clearNotification = () => {
